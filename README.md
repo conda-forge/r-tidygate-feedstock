@@ -1,11 +1,11 @@
-About r-tidygate
-================
+About r-tidygate-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-tidygate-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/stemangiola/tidygate
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-tidygate-feedstock/blob/main/LICENSE.txt)
 
 Summary: It interactively or programmatically label points within custom gates on two dimensions <https://github.com/stemangiola/tidygate>. The information is added to your tibble. It is based on the package 'gatepoints' from Wajid Jawaid (who is also author of this package). The code of 'gatepoints' was nto integrated in 'tidygate'. The benefits are (i) in interactive mode you can draw your gates on extensive 'ggplot'-like scatter plots; (ii) you can draw multiple gates; and (iii) you can save your gates and apply the programmatically.
 
