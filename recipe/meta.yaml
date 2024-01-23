@@ -1,4 +1,4 @@
-{% set version = '0.4.9' %}
+{% set version = "0.4.10" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/tidygate_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tidygate/tidygate_{{ version }}.tar.gz
-  sha256: 4e63660cfcad9f251f06b4d755b538066fa9e31aed72fe0f87a999e33af9427f
+  sha256: 5ff3d0e93e0a6462ad2d82ddd8187b830d99e9246ed02ee448043a503fa3de10
 
 build:
-  merge_build_host: True  # [win]
-  number: 2
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -59,13 +59,8 @@ test:
 about:
   home: https://github.com/stemangiola/tidygate
   license: GPL-3.0-only
-  summary: It interactively or programmatically label points within custom gates on two dimensions
-    <https://github.com/stemangiola/tidygate>. The information is added to your tibble.
-    It is based on the package 'gatepoints' from Wajid Jawaid (who is also author of
-    this package). The code of 'gatepoints' was nto integrated in 'tidygate'. The benefits
-    are (i) in interactive mode you can draw your gates on extensive 'ggplot'-like scatter
-    plots; (ii) you can draw multiple gates; and (iii) you can save your gates and apply
-    the programmatically.
+  summary: It interactively or programmatically label points within custom gates on two dimensions <https://github.com/stemangiola/tidygate>. The information is added to your tibble. It is based on the package 'gatepoints' from Wajid Jawaid (who is also author of this package). The code of 'gatepoints' was nto integrated
+    in 'tidygate'. The benefits are (i) in interactive mode you can draw your gates on extensive 'ggplot'-like scatter plots; (ii) you can draw multiple gates; and (iii) you can save your gates and apply the programmatically.
   license_family: GPL3
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
