@@ -1,4 +1,4 @@
-{% set version = "0.4.10" %}
+{% set version = "1.0.13" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/tidygate_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tidygate/tidygate_{{ version }}.tar.gz
-  sha256: 5ff3d0e93e0a6462ad2d82ddd8187b830d99e9246ed02ee448043a503fa3de10
+  sha256: 8aac95903d1d11a3ebd5531f4ecc55e0dcc1e7a336761df198dbc591c260f0c5
 
 build:
   merge_build_host: true  # [win]
