@@ -1,6 +1,5 @@
 {% set version = "1.0.13" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-tidygate
@@ -13,8 +12,7 @@ source:
   sha256: 8aac95903d1d11a3ebd5531f4ecc55e0dcc1e7a336761df198dbc591c260f0c5
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
