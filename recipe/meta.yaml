@@ -1,4 +1,4 @@
-{% set version = "1.0.13" %}
+{% set version = "1.0.14" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/tidygate_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tidygate/tidygate_{{ version }}.tar.gz
-  sha256: 8aac95903d1d11a3ebd5531f4ecc55e0dcc1e7a336761df198dbc591c260f0c5
+  sha256: 68611f2ded0e44415607ae3341ebb646521a116327fb19ee10f698999465d9f1
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
